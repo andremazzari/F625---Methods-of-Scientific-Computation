@@ -21,6 +21,10 @@ $$\sigma (x,y) = q_0 \sin \frac{2 \pi x}{L} \sin \frac{2 \pi y}{L}. $$
 To calculate the potential function $V(x,y)$, we have to evaluate the following double integral for each value of $(x,y)$:
 $$V(x,y) = \frac{1}{4 \pi \epsilon_0} \iint \frac{\sigma(x,y)}{\sqrt{(x - x^{\prime})^2 + (y - y^{\prime})^2}}dx^{\prime}dy^{\prime}. $$
 The integration method chosen was gaussian quadrature. The next step was to take the gradient (derivative) of the function $V(x,y)$ to obtain the eletric field $E(x,y)$. It was used the **numpy** function *gradient*, which implements central differences in interior points and backward or forward differences in boundary points. The image below, produced using the function *streamplot* of **matplotlib**, shows the eletric field for this charge distribution:
+<p align="center">
+  <img src="./../../images/5_21c.png" />
+   </div>
+</p>
 
 ```diff
 - verificar imagem.
