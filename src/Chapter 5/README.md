@@ -15,3 +15,13 @@ But there is one last problem that must be dealt: the factor $x^{a-1}$ can becom
 - Colocar imagem da função gama.
 ```
 
+## Exercise 5.21:
+In this exercise, we have to use numerical integration and derivation methods to calculate the eletric potential and field of a given distribution of charges. For instance, the charge distribution in item c) is given by
+$$\sigma (x,y) = q_0 \sin \frac{2 \pi x}{L} \sin \frac{2 \pi y}{L}. $$
+To calculate the potential function $V(x,y)$, we have to evaluate the following double integral for each value of $(x,y)$:
+$$V(x,y) = \frac{1}{4 \pi \epsilon_0} \iint \frac{\sigma(x,y)}{\sqrt{(x - x^{\prime})^2 + (y - y^{\prime})^2}}dx^{\prime}dy^{\prime}. $$
+The integration method chosen was gaussian quadrature. The next step was to take the gradient (derivative) of the function $V(x,y)$ to obtain the eletric field $E(x,y)$. It was used the **numpy** function *gradient*, which implements central differences in interior points and backward or forward differences in boundary points. The image below, produced using the function *streamplot* of **matplotlib**, shows the eletric field for this charge distribution:
+
+```diff
+- verificar imagem.
+```
