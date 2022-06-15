@@ -34,3 +34,7 @@ The integration method chosen was gaussian quadrature. The next step was to take
 In this execise, it is given information about the altitude in a bi-dimension surface, i.e. it is given a function $z=w(x,y)$ for each point in a plane. Also, we are given information about illumination intensity that is arriving at the surface. With these data, we can make a density plot to visualize the illuminated surface. The illumination intensity in each point of the surface is given by:
 $$ I = \frac{a_{x}(\partial w / \partial x)+a_{y}(\partial w / \partial y)-a_{z}}{\sqrt{(\partial w / \partial x)^{2}+(\partial w / \partial y)^{2}+1}} ,$$
 where $\vec{a} = (a_{x},a_{y},a_{z})$ is a vector representing the intensity and direction of light in a specific point. See 'Exercise 5.23: Image processing and the STM' in '/references/exercises5.pdf' for more details. To calculate $I$, it is necessary to calculate numerically the partial derivatives of $w$. It was used central differences in interior points and backward or forward differences in boundary points. Below, we have the result of the program when the altitude $z = w(x,y)$ represents data about the surface of the Earth:
+<p align="center">
+  <img src="./../../images/5_23b.png" />
+   </div>
+</p>
