@@ -1,0 +1,1 @@
+# Chapter 6 - Solution of linear and nonlinear equations
