@@ -1,6 +1,6 @@
 from math import sin,cos,pi
 from numpy import array,arange
-from pylab import plot,xlabel,show
+import matplotlib.pyplot as plt
 from time import time
 
 #parametros do problema (valores no sistema SI)
@@ -64,8 +64,10 @@ for t in tpoints:
     
 
 
-plot(tpoints,E)
-xlabel("t")
-show()
+plt.plot(tpoints,E)
+plt.title("Variation of energy during evolution", fontsize = 12)
+plt.xlabel("Time")
+plt.ylabel("Energy")
+plt.show()
 print("Variaçao maxima de energia:",DeltaE)
 print(time()-t0)

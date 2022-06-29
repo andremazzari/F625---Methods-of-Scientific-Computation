@@ -42,6 +42,7 @@ for t in tpoints:
     
 
 plt.plot(xpoints,ypoints)
+plt.title("Trajectory with fixed step size", fontsize = 12)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()

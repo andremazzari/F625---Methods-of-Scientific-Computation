@@ -29,8 +29,8 @@ def runge_kutta(r,h,t):
     return v
 
 a = 0.0
-b = 1000
-N = 1e4
+b = 600
+N = 5e5
 h = (b-a)/N #Valor inicial do passo
 delta = 1
 
@@ -77,13 +77,9 @@ while (t<b):
                 h = h*power(p,1/4)
             
             flag = 1
-            #if i>1467:
-              #  print(1,i,h,p,t,r0[1],r1[1])
         elif p<1:
             #precisão pior que a desejada
             h = h*p**(1/4)
-            #if i>1467:
-               # print(2,i,h,p,t)
 
 
     xpoints.append(r0[0])
@@ -98,6 +94,7 @@ while (t<b):
 
 
 plt.plot(xpoints,ypoints)
+plt.title("Trajectory with adaptive step size", fontsize = 12)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()

@@ -1,5 +1,5 @@
 from numpy import array,arange
-from pylab import plot,xlabel,show
+import matplotlib.pyplot as plt
 
 A = 10
 B = 28
@@ -35,5 +35,8 @@ for t in tpoints:
     k4 = h*f(r+k3,t+h)
     r += (k1+2*k2+2*k3+k4)/6
 
-plot(xpoints,zpoints)
-show()
+plt.plot(xpoints,zpoints)
+plt.xlabel("x")
+plt.ylabel("z")
+plt.title("z against x - Lorenz equations", fontsize = 15)
+plt.show()
