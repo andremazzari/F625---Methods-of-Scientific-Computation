@@ -1,16 +1,16 @@
 from numpy import empty,sin,pi, linspace
-from matplotlib.pyplot import plot,xlabel,ylabel,show,legend
+import matplotlib.pyplot as plt
 from time import time
 
 #parametros do problema
 L = 20 #altura máxima em metros
-N = 100 #número de divisões do reticulado
+N = 1000 #número de divisões do reticulado
 a = L/N #espaçmento do reticulado em metros
 D = 0.1 #constante de difusão em m^2day^-1
 A = 10 #em graus celsius
 B = 12 #em graus celsius
 tau = 365 #periodo em dias
-h = 0.1 #passo em dias
+h = 0.001 #passo em dias
 epsilon = h/1000 #em dias, usado para comparar as datas
 c = (h*D)/(a**2) #coeficiente usado no sistema de equações
 profundidade = linspace(0,L,N+1)
@@ -53,18 +53,19 @@ while t<(tfinal):
     
     #plota as temperaturas nos tempos definidos
     if abs(t-t1)<epsilon:
-        plot(profundidade,T, label = "9 anos e 3 meses")
+        plt.plot(profundidade,T, label = "9 years and 3 months")
     elif abs(t-t2)<epsilon:
-        plot(profundidade,T, label = "9 anos e 6 meses")
+        plt.plot(profundidade,T, label = "9 years and 6 months")
     elif abs(t-t3)<epsilon:
-        plot(profundidade,T, label = "9 anos e 9 meses")
+        plt.plot(profundidade,T, label = "9 years and 9 months")
     elif abs(t-t4)<epsilon:
-        plot(profundidade,T, label = "10 anos")
+        plt.plot(profundidade,T, label = "10 years")
 
-xlabel("profundidade(m)")
-ylabel("temperatura(Celsius)")
-legend()
-show()
+plt.xlabel("Depth (m)")
+plt.ylabel("Temperature (Celsius)")
+plt.legend()
+plt.title("Temperature profile in Earth's crost", fontsize = 15)
+plt.show()
 print(time()-t0)
     
     
