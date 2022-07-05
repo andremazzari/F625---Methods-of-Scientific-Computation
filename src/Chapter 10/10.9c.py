@@ -1,6 +1,6 @@
 from numpy import empty,sum,zeros,array,exp
 from random import random,randrange
-from matplotlib.pyplot import plot,show,ylabel,title
+import matplotlib.pyplot as plt 
 from time import time
 
 #parametros do problema
@@ -62,9 +62,10 @@ for i in range(1000000):
     Mplot.append(Magnetization(s))
 
 
-plot(Mplot)
-ylabel("Magnetization")
-title("T = " + str(T))
-show()
+plt.plot(Mplot)
+plt.ylabel("Magnetization")
+plt.xlabel("Step")
+plt.title("Evolution of the magnetization", fontsize = 15)
+plt.show()
 print(time()-t0)
 
