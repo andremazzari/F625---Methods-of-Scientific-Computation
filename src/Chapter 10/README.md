@@ -9,3 +9,13 @@ I also made an animation of the evolution of the spin-lattice using the <b>vpyth
 ```diff
 - colocar imagens
 ```
+
+## Exercise 10.13:
+In this exercise, I constructed an algorithm to reproduce the <b>diffusion-limited aggregation (DLA)</b> model. I considered two versions of the DLA model. In the first, a particle starts at the center of a square lattice, and performs a <b>random walk</b> until it reaches the walls of the lattice, at which point it sticks to the edge. Then, a second particle starts at the center, and performs a random walk until it sticks to the edges or to the other particle. The, a third particle starts, and so on. The process stops when an anchored particle in the center of the lattice. An animation of the evolution of the system was made using the <b>vpython</b> library. Below, there as a frame of the animation (when the process has reached its end):
+```diff
+- colocar imagem
+```
+In the second version, the lattice starts with a particle fixed in the center. Then, another particles starts in a random point and performs a random walk until it reaches the particle in the center (it does not get anchored inn the walls). Then, a second particle starts and perform a random walk until it gets anchored to one of the other particles. And so on. I also made an animation of this case using the vpython library. Below, there are two frames of it (of two different runs):
+```diff
+-colocar imagens
+```
