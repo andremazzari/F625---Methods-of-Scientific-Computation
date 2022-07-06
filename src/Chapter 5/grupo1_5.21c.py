@@ -73,6 +73,7 @@ for x in linspace(Xmin,Xmax,DivX):
 
 plt.figure()
 plt.imshow(V)
+
  
  
 dx = (Xmax-Xmin)/(DivX-1) #espaço entre os pontos na coordenada x
@@ -81,3 +82,7 @@ E = negative(gradient(V, dx, dy)) #calcula o campo eletrico
 
 plt.figure()
 plt.streamplot(linspace(Xmin,Xmax,DivX), linspace(Ymin,Ymax,DivY), E[1], E[0], density = 2)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Streamplot of the electric field", fontsize = 15)
+plt.show()
