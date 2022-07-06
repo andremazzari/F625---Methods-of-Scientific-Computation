@@ -6,7 +6,7 @@ The <b>Ising model</b> is a theoretical model to describe the magnetization of a
   <img src="./../../images/10_9-1.png" />
    </div>
 </p>
-I also made an animation of the evolution of the spin-lattice using the <b>vpython</b> library (file 10.9e.ipynb). In it, red circles represent spins with value +1, while green circles represent spins with value -1. With these simulations, it was possible to note a phase transition of the system above some temperature. There was a spontaneous magnetization for low temperatures, while for high temperatures, the mean magnetization was zero. Below, there are three frames of the animation, each one for a different temperature.
+I also made an <b>animation</b> of the evolution of the spin-lattice using the <b>vpython</b> library (file 10.9e.ipynb). In it, red circles represent spins with value +1, while green circles represent spins with value -1. With these simulations, it was possible to note a phase transition of the system above some temperature. There was a spontaneous magnetization for low temperatures, while for high temperatures, the mean magnetization was zero. Below, there are three frames of the animation, each one for a different temperature.
 <br><br>
 <p align="center">
   <img src="./../../images/10_9-2.png" />
