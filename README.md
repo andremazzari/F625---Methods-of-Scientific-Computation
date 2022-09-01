@@ -6,25 +6,25 @@ The book used during the discipline was "Computational Physics" from "Mark Newma
 The source codes of the exercises can be found in '/src/', divided by chapters. In the README of the folders of each chapter, there is a brief description of what was done in each exercise. The text of the exercises can be seen in '/references/' (they are available for free in the [author's website](http://www-personal.umich.edu/~mejn/cp/)).
 
 The follwing topics were studied in the course:
-- **Chapter 5 - :**
-- **Chapter 6 - :**
-- **Chapter 7 - :**
-- **Chapter 8 - :**
-- **Chapter 9 - :**
-- **Chapter 10 - :**
+- **Chapter 5 - Integrals and derivatives:**
+- **Chapter 6 - Solution of linear and nonlinear equations:**
+- **Chapter 7 - Fourier transforms:**
+- **Chapter 8 - Ordinary differential equations:**
+- **Chapter 9 - Partial differential equations:**
+- **Chapter 10 - Random processes and Monte Carlo methods:**
 
 ## Repo structure
 
 ```batch
     ├── README.md          <- The top-level README.
     |
-    ├── src               <- Not uploaded to github, see intructions for download.
-    │   ├── Chapter 5       <- Data from third party sources.
-    │   ├── Chapter 6       <- Data from third party sources.
-    │   ├── Chapter 7       <- Data from third party sources.
-    │   ├── Chapter 8       <- Data from third party sources.
-    │   ├── Chapter 9       <- Data from third party sources.
-    │   └── Chapter 10      <- The original, immutable data dump.
+    ├── src               <- Source codes of the exercises.
+    │   ├── Chapter 5       <- Integrals and derivatives.
+    │   ├── Chapter 6       <- Solution of linear and nonlinear equations.
+    │   ├── Chapter 7       <- Fourier transforms.
+    │   ├── Chapter 8       <- Ordinary differential equations.
+    │   ├── Chapter 9       <- Partial differential equations.
+    │   └── Chapter 10      <- Random processes and Monte Carlo methods.
     │
     ├── references          <- Exercises' texts.
     │
